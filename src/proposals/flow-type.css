@@ -1,0 +1,257 @@
+/* One display voice: Chinese serif, Instrument upright + italic. */
+@font-face {
+  font-family: Instrument;
+  src: url('/fonts/gallery-instrument-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: GalleryText;
+  src: url('/fonts/gallery-body-sc.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: GalleryText;
+  src: url('/fonts/gallery-body-sc-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  font-family: GallerySans, GalleryText, 'PingFang SC', sans-serif;
+  --serif: GallerySerif, 'Songti SC', serif;
+  --type-hall: clamp(42px, 4.5vw, 68px);
+  --type-project: clamp(30px, 3.1vw, 46px);
+}
+
+.flow-site {
+  font-kerning: normal;
+}
+
+.hero-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  line-height: 1.6;
+}
+
+.hero-identity > span:first-child {
+  font-size: 12px;
+  letter-spacing: .03em;
+}
+
+.flow-signature {
+  font-weight: 500;
+  letter-spacing: .015em;
+}
+
+.flow-signature span {
+  font: 400 12px/1.5 GallerySans, sans-serif;
+  letter-spacing: .015em;
+}
+
+.hero-type {
+  font-family: Instrument, Georgia, serif;
+  font-size: clamp(125px, 17.2vw, 260px);
+  font-weight: 400;
+  letter-spacing: -.025em;
+}
+
+.hero-sans {
+  font-weight: 400;
+}
+
+.hero-type .hero-italic {
+  font-size: 1.18em;
+  letter-spacing: -.025em;
+}
+
+.hero-caption h2,
+.hall-heading h2,
+.content-intro h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  letter-spacing: -.035em;
+}
+
+.hall-heading h2,
+.lab-heading h2,
+.content-intro h2 {
+  font-size: var(--type-hall);
+  line-height: 1.3;
+}
+
+.hall-heading h2 em,
+.lab-heading h2 em,
+.content-intro > em {
+  font-family: Instrument, Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(60px, 6.6vw, 100px);
+  line-height: 1;
+  letter-spacing: -.025em;
+  margin-top: 16px;
+}
+
+.research-copy h3,
+.content-panel h3,
+.experiment-info h3 {
+  font-family: var(--serif);
+  font-size: var(--type-project);
+  font-weight: 500;
+  letter-spacing: -.03em;
+  line-height: 1.45;
+}
+
+.serif-cn {
+  font-weight: inherit;
+}
+
+.experiment-info > em {
+  font-size: clamp(40px, 4vw, 60px);
+  line-height: 1.08;
+  letter-spacing: -.02em;
+}
+
+.report-type > span {
+  font: 400 clamp(58px, 6.4vw, 92px)/.95 Instrument, Georgia, serif;
+  letter-spacing: -.025em;
+}
+
+.report-type > em,
+.commerce-type > em,
+.ribbon-track > span,
+.flow-ending > em {
+  letter-spacing: -.025em;
+}
+
+.commerce-type > span {
+  font-family: Instrument, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -.025em;
+}
+
+.fish-type {
+  font-family: Instrument, Georgia, serif;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.025em;
+}
+
+.fish-big-stat strong,
+.fish-stats strong,
+.gold-stats strong {
+  font-family: GallerySans, GallerySerif, serif;
+  font-weight: 400;
+  letter-spacing: -.04em;
+  font-variant-numeric: lining-nums;
+}
+
+.hall-heading p,
+.research-copy > p,
+.experiment-info > p,
+.content-panel p {
+  font-size: 14px;
+  line-height: 1.95;
+  letter-spacing: .015em;
+}
+
+.research-copy .research-sub,
+.gold-sub {
+  font-weight: 500;
+}
+
+.exhibit-meta,
+.experiment-info .exhibit-meta,
+.hero-topline,
+.hall-number,
+.section-count,
+.flow-edition,
+.experiment-footer,
+.data-provenance,
+.flow-ending > div {
+  font-size: 11px;
+}
+
+@media (max-width: 1100px) and (min-width: 801px) {
+  :root {
+    --type-project: 32px;
+  }
+
+  .hero-type {
+    font-size: 17.2vw;
+  }
+
+  .hall-heading p,
+  .research-copy > p,
+  .experiment-info > p,
+  .content-panel p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  :root {
+    --type-hall: 42px;
+    --type-project: 30px;
+  }
+
+  .hero-type {
+    font-size: 25vw;
+  }
+
+  .hero-type .hero-italic {
+    font-size: 1.18em;
+  }
+
+  .hall-heading h2 em,
+  .lab-heading h2 em,
+  .content-intro > em {
+    font-size: clamp(54px, 13.5vw, 78px);
+    line-height: 1.05;
+  }
+
+  .report-type > span {
+    font-size: 60px;
+  }
+
+  .report-type > em {
+    font-size: 80px;
+  }
+
+  .experiment-info > em {
+    font-size: 44px;
+  }
+
+  .hall-heading p,
+  .research-copy > p,
+  .experiment-info > p,
+  .content-panel p {
+    font-size: 13px;
+  }
+
+  .hero-topline {
+    font-size: 10px;
+  }
+
+  .exhibit-meta,
+  .experiment-info .exhibit-meta {
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+
+  .fish-big-stat strong {
+    font-size: 86px;
+  }
+
+  .fish-type {
+    font-size: 14vw;
+  }
+
+  .flow-ending > div {
+    font-size: 10px;
+  }
+}

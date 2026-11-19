@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+.taste-skill/
+artifacts/
+.venv-media/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+source/
+QA.md
+DESIGN*.md
+.venv*/
+*.log
