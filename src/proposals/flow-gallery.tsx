@@ -15,7 +15,7 @@ import type { ArticleId } from './ArticleReader';
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const projects = [
-  { name: '热点显微镜', english: 'HotScope', category: '网页产品 / 传播分析', image: 'hotscope.webp', url: 'https://hotscope-for-weibo.vercel.app/', description: '用可操作的网页，探索微博热搜与传播案例。线上页面名为“热搜显微镜”。' },
+  { name: '热点显微镜', english: 'HotScope', category: '网页产品 / 传播分析', image: 'hotscope.webp', url: 'https://hotscope-weibo.vercel.app/', description: '用可操作的网页，探索微博热搜与传播案例。线上页面名为“热搜显微镜”。' },
   { name: '流年', english: 'Liunian', category: '网页产品 / 个人数据库', image: 'liunian.webp', url: 'https://symphonious-arithmetic-74cf38.netlify.app/', description: '围绕个人数据与成长记录，探索个人数据库的 AI 化。' },
   { name: '微信年度报告', english: 'A year, replayed.', category: '手机网页 / 年度回顾', image: 'replay.webp', url: 'https://2501137682.github.io/WeChat_Replay_2025/', description: '把一年的记录，组织成一段可以滑动浏览的手机网页。', mobile: true },
   { name: '公众号内容工作流', english: 'From idea to draft.', category: 'n8n / 自动化实践', image: 'workflow.webp', description: '从研究、写作、配图到微信草稿创建，串联内容生产流程。', workflow: true },

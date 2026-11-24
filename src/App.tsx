@@ -16,7 +16,7 @@ const links = {
   luckin: 'https://mp.weixin.qq.com/s/LaehjGpxzTCFKVTAbB9UkQ',
   ecommerce: 'https://mp.weixin.qq.com/s/O2ZuGYDufqQQFU5wN1HRiQ',
   douyin: 'https://www.douyin.com/user/MS4wLjABAAAAKLcXOLdUjt22_1IrPnYepHyA9DCDpN9NRlBO3KNtWA2noVAzpRnCYRkhKQhEjJYw',
-  hotscope: 'https://hotscope-for-weibo.vercel.app/',
+  hotscope: 'https://hotscope-weibo.vercel.app/',
   liunian: 'https://symphonious-arithmetic-74cf38.netlify.app/',
   replay: 'https://2501137682.github.io/WeChat_Replay_2025/',
 };
